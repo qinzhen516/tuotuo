@@ -39,8 +39,8 @@ gulp.task("lib", function(){
 		.pipe(gulp.dest("dist/lib"));
 });
 gulp.task("images", function(){
-	gulp.src(["src/images/**/*.*"])
-		.pipe(gulp.dest("dist/images"));
+	gulp.src(["src/img/**/*.*"])
+		.pipe(gulp.dest("dist/img"));
 });
 gulp.task("mock", function(){
 	gulp.src(["src/mock/**/*.*"])

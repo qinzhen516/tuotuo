@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>沱沱工社—登录</title>
+		<link rel="stylesheet" type="text/css" href="/css/login.css"/>
+		<script src="../lib/require.js" data-main="../js/login"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="loginHeader">
+			<div class="topbox">
+				<h1>
+					<a href="/src/index.html">
+						<span id="logo">沱沱工社</span>
+					</a>
+				</h1>
+				<h2>欢迎加入沱沱工社</h2>
+			</div>
+			
+		</div>
+		<!-- main-->
+		<div class="main">
+			<div class="mainbox">
+				<div class="left">
+					<img src="/img/login/0dae0a4e7e647ed236c017211e426684.jpg"/>
+				</div>
+				<div class="right">
+					<ul class="login_title">
+						<li class="user">
+							用户登录
+						</li>
+						<li class="reg">
+							<span>没有沱沱账号？</span>
+							<a href="register.html">立即注册></a>
+						</li>
+					</ul>
+					<form action="" method="get">
+						<span id="message"> 
+							<span class="m1"></span>
+							<a href="#" class="m2">短信快捷登录</a>
+						</span>
+						<div class="ord">
+							<!--普通登录-->
+							<ul>
+								<li class="li1">
+									<input type="text" id="ord_name" placeholder="请输入邮箱地址/卡号/手机号！" />
+									<i></i>
+								</li>
+								<li class="ord_txt " id="name_err">
+									用户名不能为空，请输入用户名
+								</li>
+								<li class="li1">
+									<input type="text" id="ord_pwd" placeholder="请输入密码" />
+									<i></i>
+								</li>
+								<li class="ord_txt " id="pwd_err">请输入密码</li>
+							</ul>
+						</div>
+						<div class="tixing">
+							<span class="autologin"><input type="checkbox" />30天内自动登录</span>
+							<a class="forget">忘记密码?</a>
+						</div>
+						
+						
+						
+						<input type="button" value="登录" id="btn"/>
+						<p>使用合作网站方式登录沱沱工社</p>
+						<div class="otherlogin">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+		<div class="footer">
+			<p>
+				<a href="#">关于我们</a>|
+				<a href="#">联系我们</a>|
+				<a href="#">服务条款</a>|
+				<a href="#">友情链接</a>|
+				<a href="#">网站地图</a>|
+				<a href="#">帮助中心</a>|
+				<a href="#">九城集团</a>|
+				<a href="#">沱沱网</a>|
+				<a href="#">企业员工内购</a>
+			</p>
+			<p>Copyright &copy; 2009-2015 沱沱工社 版权所有 京ICP证100205号 京ICP备09043401号 京公网安备110105019943</p>
+		</div>
+		
+	</body>
+</html>

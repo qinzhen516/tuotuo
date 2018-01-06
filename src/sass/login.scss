@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.loginHeader{
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-top: 6px;
+}
+.loginHeader .topbox{
+    width: 1180px;
+    height: 75px;
+    margin: 0 40px;
+}
+h1{
+    width: 316px;
+    height: 60px;
+    
+    float: left;
+}
+h1 a{
+    margin-top: 15px;
+    display: inline-block;
+    width: 316px;
+    height: 60px;
+    background: url(/img/login/tlogo.png);
+}
+h1 a span{
+    display: none;
+}
+h2{
+    width: 854px;
+    height: 45px;
+    font-size: 30px;
+    font-family: "微软雅黑";
+    color: #8e8d8d;
+    font-weight: lighter;
+    padding: 30px 0 0 10px;
+    float: left;
+}
+//主体部分
+.main{
+    width: 100%;
+    min-height: 580px;
+    background: #f0f0f0;
+    position: relative;
+}
+.main .mainbox{
+    margin: 0 auto;
+    width: 1180px;
+    overflow: hidden;
+}
+.main .mainbox .left{
+    height: 580px;
+    width: 622px;
+    position: relative;
+    top: 0;
+    left: 12px;
+    float: left;
+}
+.main .mainbox .right{
+    width: 380px;
+    height: 396px;
+    background: #fff;
+    padding: 30px 44px;
+    margin-top:65px ;
+    margin-right:89px ;
+    float: right;
+
+}
+.main{
+    .mainbox{
+        .right{
+           .login_title{
+            height: 36px;
+            line-height: 36px;
+            border-bottom: #e3e3e3 1px solid;
+            } 
+        } 
+        
+    } 
+} 
+.main{
+    .mainbox{
+        .right{
+           .login_title{
+                .user{
+                    color: #ff3300;
+                    font-size: 18px;
+                    font-family: "微软雅黑";
+                    float: left;
+                    font-weight: bold;
+//                  width: 72px;
+//                  height: 36px;
+                }
+                .reg{
+                    float: right;
+                    color: #bababa;
+                    font-size: 12px;
+                    a{
+                        color: #FF3300;
+                    }
+                    
+                }
+            } 
+            form{
+                overflow: hidden;
+                #message{
+                    display: block;
+                    border: #dedede 1px solid;
+//                 width: 80px;
+                    height: 22px;
+                    line-height: 22px;
+                    float: right;
+                    font-size: 12px;
+                    padding: 0 15px;
+                    margin: 10px 0;
+                    .m1{
+                       display: block;
+                       float: left;
+                        width: 20px;
+                        height: 20px;
+                        background: url(/img/login/login_element.png) no-repeat 0px 0px;
+                    }
+                    .m2{
+                        display: block;
+                        float: left;
+                        width: 72px;
+                        height: 22px;
+                        line-height: 22px; 
+                        color: #8E8D8D;
+                    }
+                    &:hover{
+                        border: 1px solid #333333;
+                    }
+                    &:hover .m1{
+                        background: url(/img/login/login_element.png) no-repeat -52px 1px;
+                    }
+                    &:hover .m2{
+                        color: #333333;
+                    }
+                }
+            }
+            
+        } 
+        
+                .ord{
+//                  overflow: hidden;
+                    ul{
+                        width: 380px; 
+                        margin-top: 44px;
+                        .li1{
+                            width:378px;
+                            height: 45px;
+                            border: 1px solid #dedede;
+                        }
+                         .ord_txt{
+                            visibility: hidden;
+                            height: 20px;
+                            line-height: 20px;
+                            font-size: 14px;
+                            color: #F97D7D;
+                            padding-left:18px ;
+                            background: url(/img/login/tc_tip.png) no-repeat 0px 3px;
+                        }
+                        i{
+                            display: inline-block;
+                            display: none;
+                            width: 70px;
+                            height: 45px;
+                            float: right;
+                            background: url(/img/login/cart_cols.png) no-repeat center center;
+                        }
+                        input{
+                            width: 300px;
+                            height: 45px;
+                            padding-left: 6px;
+                            float: left;
+                            border: none;
+                        }
+                    }
+                }
+                .tixing{
+                    width: 100%;
+                    height: auto;
+                    padding-top: 10px;
+                    .autologin{
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #8E8D8D;
+                        float: left;
+                    }
+                    .forget{
+                        font-size: 12px;
+                        color: #8E8D8D;
+                        float: right;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                #btn{
+                    height: 45px;
+                    width: 100%;
+                    background-color:#FF3300 ;
+                    color: #fff;
+                    text-align: center;
+                    border: none;
+                    margin-top: 15px;
+                }
+                p{
+                    margin: 0 78px 0 78px;
+                    font-size: 14px;
+                    color: #9b9b9b;
+                    padding-top: 15px;
+                }
+                .otherlogin{
+                    width: 100%;
+                    margin: 30px 0 0 0 ;
+                    span:nth-child(1){
+                        background: url(/img/login/login_element.png) no-repeat -2px -22px;
+                        display: inline-block;
+                        width: 105px;
+                        height: 32px;
+                        margin-right: 23px;
+                        &:hover{
+                            background-position: -2px -126px;
+                        }
+                    }
+                    span:nth-child(2){
+                        background: url(/img/login/login_element.png) no-repeat -2px -56px;
+                        display: inline-block;
+                        width: 105px;
+                        height: 32px;
+                        margin-right: 23px;
+                         &:hover{
+                            background-position: -2px -158px;
+                        }
+                    }
+                    span:nth-child(3){
+                        background: url(/img/login/login_element.png) no-repeat -2px -91px;
+                        display: inline-block;
+                        width: 105px;
+                        height: 32px;
+                         &:hover{
+                            background-position: -2px -191px;
+                        }
+                        
+                    }
+                }
+            
+    } 
+} 
+
+
+
+//footer
+.footer{
+    width: 1180px;
+    margin: 0 auto;
+    height: 70px;
+    margin-top: 75px;
+    border-top: 1px solid #E3E3E3;
+    text-align: center;
+    p{
+        margin-top: 10px;
+        font-size:12px ;
+        color: #808080; 
+        a{
+            color: #808080; 
+            padding: 0 15px;
+        }
+    }
+}
