@@ -2,8 +2,112 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
-	</head>
+		<title>沱沱工社——注册</title>
+		<link rel="stylesheet" type="text/css" href="/css/register.css"/>
+		<script src="../lib/require.js" data-main="../js/register"></script>
 	<body>
+		<!--头部-->
+		<div class="loginHeader">
+			<div class="topbox">
+				<h1>
+					<a href="http://localhost:8080/">
+						<span id="logo">沱沱工社</span>
+					</a>
+				</h1>
+				<h2>欢迎加入沱沱工社</h2>
+			</div>
+			
+		</div>
+		<!--main-->
+		<div class="main">
+			<div class="white_box">
+				<div class="title">
+					<ul>
+						<li class="person">个人用户</li>
+						<li class="company">企业用户</li>
+						
+					</ul>
+					<span class="login">
+						已有账户？
+							<a href="/html/login.html">直接登录></a>
+					</span>
+					
+				</div>
+				<!--个人用户-->
+				<div class="person_box">
+					<form action="" method="get" id="person_form">
+						<ul class="per_ul">
+							<li class="li1">
+								<input type="text" id="per_name" placeholder="请输入手机号" class="text"/>
+								
+							</li>
+							<li class="per_txt " id="name_err">
+									手机号不能为空
+							</li>
+							<li class="li1">
+								<input type="password" id="per_pwd" placeholder="请输入密码" class="text"/>
+								
+							</li>
+							<li class="per_txt " id="pwd_err">请输入密码</li>
+							<li class="li1">
+								<input type="password" id="per_pwd2" placeholder="请再次输入密码" class="text"/>
+								
+							</li>
+							<li class="per_txt " id="pwd2_err">两次输入的密码不一致</li>
+							<li class="code">
+								<input type="text" id="code" placeholder="请输入图形验证码"/>
+								<img src="" id="gen_code" />
+							</li>
+							<li id="code_text">您输入的验证码错误，请确认后重新填写</li>
+						</ul>
+						
+						<div class="tixing">
+							<p class="agree"><input type="checkbox" class="check"/><span>我已经阅读并同意
+							<a href="#">《沱沱工社用户协议》</a></span></p>
+						</div>
+						
+						<input type="submit" value="注册" id="btn"/>
+					</form>
+					<div class="per_ban">
+						<img src="/img/register/5a3e2d7b0940c243fb9a1359db9333b0.jpg"/>
+					</div>
+				</div>
+			
+				<div class="company_box">
+					<div class="imgtop">
+						<img src="/img/register/company_top.jpg"/>
+					</div>
+					<div class="imgmid">
+						<div class="left">
+							<img src="/img/register/company_left.jpg"/>
+						</div>
+						<div class="right">
+							<img src="/img/register/company_right.jpg"/>
+						</div>
+					</div>
+					<div class="imgbottom">
+						<img src="/img/register/company_bottom.jpg"/>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		<!--foot-->
+		<div class="footer">
+			<p>
+				<a href="#">关于我们</a>|
+				<a href="#">联系我们</a>|
+				<a href="#">服务条款</a>|
+				<a href="#">友情链接</a>|
+				<a href="#">网站地图</a>|
+				<a href="#">帮助中心</a>|
+				<a href="#">九城集团</a>|
+				<a href="#">沱沱网</a>|
+				<a href="#">企业员工内购</a>
+			</p>
+			<p>Copyright &copy; 2009-2015 沱沱工社 版权所有 京ICP证100205号 京ICP备09043401号 京公网安备110105019943</p>
+		</div>
 	</body>
 </html>

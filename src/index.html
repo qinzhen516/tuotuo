@@ -3,11 +3,260 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>沱沱工社</title>
-		<script src="lib/require.js" data-main="js/index"></script>
+		<link rel="stylesheet" type="text/css" href="/css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/index.css"/>
+		<script src="/lib/xmCarousel.js"></script>
+		<script src="/lib/require.js" data-main="js/index"></script>
 	</head>
 	<body>
 		<div class="header"></div>
-		首页111
+		<div class="main">
+			<div class="banner1">
+				
+			</div>
+			<div class="ban_left">
+				<ul class="left_ul">
+					<li class="Li"><a href="/html/detail.html">有机食品</a>
+						<div class="chlidmenu1">
+						<a href="/html/detail.html">有机食品</a>
+						</div>
+					</li>
+					<li class="Li"><a href="#">蔬菜水果</a>
+						<div class="chlidmenu2">
+							蔬菜水果
+						</div>
+					</li>
+					<li class="Li"><a href="#">肉禽蛋奶</a>
+						<div class="chlidmenu3">
+							肉禽蛋奶
+						</div>
+					</li>
+					<li class="Li">
+						 <a href="#">海鲜水产</a>
+						<div class="chlidmenu4">
+							海鲜水产
+						</div>
+					</li>
+					<li class="Li"><a href="#">粮油副食</a>
+						<div class="chlidmenu5">
+							粮油副食
+						</div>
+					</li>
+					<li class="Li"><a href="#">休食冲饮</a>
+						<div class="chlidmenu6">
+							休闲冲饮
+						</div>
+					</li>
+					<li class="Li"><a href="#">生态日用</a>
+						<div class="chlidmenu7">
+							生态日用
+						</div>
+					</li>
+					
+					
+				</ul>
+			</div>
+			<div class="ban_right">
+				<img src="/img/index/6bc972d3503ad3f5ed4eb6e99c5c1ebc.jpg"/>
+			</div>
+			
+			<div class="banner2">
+				<span id="prev2"></span>
+				<ul class="ban2">
+					<li class="ban2_left"><img src="img/index/03ea5ac4a36c908c3af3ed628a600337.jpg"/></li>
+					<li><img src="img/index/1c177d288a95a9b50900cb3096b49d4f.jpg" /></li>
+					<li><img src="img/index/4379d2478c048dd2cb77da8df0b9fc64.jpg" /></li>
+					<li><img src="img/index/4ba005d951a479292309a3245f96e6e4.jpg" /></li>
+					<li><img src="img/index/6871dcf107aff36a691b729c8aa04c7d.jpg" /></li>
+					<li><img src="img/index/9a1508f0ab5e297cc5c9d2b4f396176d.jpg" /></li>
+					<li><img src="img/index/c742ca339c131ecb3aa6ea7c29f38dd8.jpg" /></li>
+					<li class="ban2_right"><img src="img/index/e912bacaff39853ca3de67ebdde0ad69.jpg"/></li>
+					
+				</ul>
+				<span id="next2"></span>
+			</div>
+			
+			
+			<!--模板加载-->
+			<!--定义模板-->
+			<div class="box">
+				<div class="box_title">
+					肉禽蛋奶
+				</div>
+				<div class="left">
+					<img src="http://img01.ttmimg.com/www/images/index/zh_cn/bj/second/a4ed5bf2696b326615f072bdbf9c387a.jpg"/>
+				</div>
+				
+				<ul class="right" id="temp1">
+				
+				
+				</ul>
+				<script type="text/html" id="product1">
+					
+					{{each products as element}}
+						
+							<li class="prod">
+								<img src="{{element.src}}"/>
+								<p class="title">{{element.title}}</p>
+								<p class="price">{{element.price}}</p>
+							</li>
+						
+					{{/each}}
+					
+				</script>
+				
+			</div>
+			
+			<!--海鲜-->
+			<div class="box">
+				<div class="box_title" style="color: #4ccdde; border-bottom:2px solid #4ccdde ;">
+					海鲜水产
+				</div>
+				<div class="left">
+					<img src="http://img03.ttmimg.com/www/images/index/zh_cn/bj/third/ca75fcdb40c9861691fefbe988928875.jpg"/>
+				</div>
+				
+				<ul class="right" id="temp2">
+				
+				
+				</ul>
+				<script type="text/html" id="product2">
+					
+					{{each products as element}}
+						
+							<li class="prod">
+								<img src="{{element.src}}"/>
+								<p class="title">{{element.title}}</p>
+								<p class="price">{{element.price}}</p>
+							</li>
+						
+					{{/each}}
+					
+				</script>
+				
+			</div>
+			
+			
+			<!--蔬菜水果-->
+			<div class="box">
+				<div class="box_title" style="color: #1db66f; border-bottom:2px solid #1db66f;">
+					蔬菜水果
+				</div>
+				<div class="left">
+					<img src="http://img01.ttmimg.com/www/images/index/zh_cn/bj/second/a4ed5bf2696b326615f072bdbf9c387a.jpg"/>
+				</div>
+				
+				<ul class="right" id="temp3">
+				
+				
+				</ul>
+				<script type="text/html" id="product3">
+					
+					{{each products as element}}
+						
+							<li class="prod">
+								<img src="{{element.src}}"/>
+								<p class="title">{{element.title}}</p>
+								<p class="price">{{element.price}}</p>
+							</li>
+						
+					{{/each}}
+					
+				</script>
+				
+			</div>
+			
+			<!--粮油副食-->
+			<div class="box">
+				<div class="box_title" style="color:#feb033; border-bottom:2px solid #feb033 ;">
+					粮油副食
+				</div>
+				<div class="left">
+					<img src="http://img01.ttmimg.com/www/images/index/zh_cn/bj/second/a4ed5bf2696b326615f072bdbf9c387a.jpg"/>
+				</div>
+				
+				<ul class="right" id="temp4">
+				
+				
+				</ul>
+				<script type="text/html" id="product4">
+					
+					{{each products as element}}
+						
+							<li class="prod">
+								<img src="{{element.src}}"/>
+								<p class="title">{{element.title}}</p>
+								<p class="price">{{element.price}}</p>
+							</li>
+						
+					{{/each}}
+					
+				</script>
+				
+			</div>
+			
+			<!--休闲茶饮-->
+			<div class="box">
+				<div class="box_title" style="color: #ffd923; border-bottom:2px solid #ffd923 ;">
+					休闲茶饮
+				</div>
+				<div class="left">
+					<img src="http://img01.ttmimg.com/www/images/index/zh_cn/bj/second/a4ed5bf2696b326615f072bdbf9c387a.jpg"/>
+				</div>
+				
+				<ul class="right" id="temp5">
+				
+				
+				</ul>
+				<script type="text/html" id="product5">
+					
+					{{each products as element}}
+						
+							<li class="prod">
+								<img src="{{element.src}}"/>
+								<p class="title">{{element.title}}</p>
+								<p class="price">{{element.price}}</p>
+							</li>
+						
+					{{/each}}
+					
+				</script>
+				
+			</div>
+			
+			<!--生态日用-->
+			<div class="box">
+				<div class="box_title" style="color: #977ec2; border-bottom:2px solid #977ec2 ;">
+					生态日用
+				</div>
+				<div class="left">
+					<img src="http://img01.ttmimg.com/www/images/index/zh_cn/bj/second/a4ed5bf2696b326615f072bdbf9c387a.jpg"/>
+				</div>
+				
+				<ul class="right" id="temp6">
+				
+				
+				</ul>
+				<script type="text/html" id="product6">
+					
+					{{each products as element}}
+						
+							<li class="prod">
+								<img src="{{element.src}}"/>
+								<p class="title">{{element.title}}</p>
+								<p class="price">{{element.price}}</p>
+							</li>
+						
+					{{/each}}
+					
+				</script>
+				
+			</div>
+			
+		</div>
+		
+		
 		<div class="footer"></div>
 	</body>
 </html>

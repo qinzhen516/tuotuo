@@ -1,5 +1,5 @@
 require(["config"], function(){
-	require(["jquery"],function(){
+	require(["jquery","cookie"],function(){
 		//点击登录，获取用户名及密码
 		
 		
@@ -59,6 +59,14 @@ require(["config"], function(){
 						if(flag === 1){
 							console.log("用户名密码正确");
 							$("#pwd_err").css({visibility:"hidden"});
+							
+							//用户名密码都正确则可以登录跳转到首页
+							$("#btn").click(function(){
+								$.cookie("name",name, {path: "/", expires: 7});
+								location.href = "/index.html"
+								console.log("dengl")
+							});
+							
 						}else if(flag === 0){
 							$("#pwd_err").css({visibility:"visible"});
 						}else{

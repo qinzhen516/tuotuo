@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="/css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/cart.css"/>
+		<script src="/lib/require.js" data-main="/js/cart"></script>
+	</head>
+	<body>
+		<div class="header"></div>
+		<div class="main">
+			<div class="warp">
+				<p class="instru">说明：促销优惠和运费按同一订单计算，分开提交的订单则会重新计算促销优惠和运费！</p>
+				<div class="city">商品送至：
+					<div class="choosecity">四川 成都</div>
+				</div>
+				<div class="cart_title">
+					<div class="ck"><label><input type="checkbox" class="ck_all"></label></div>	
+					<div class="img_title">商品名称</div>
+					<div class="guige">规格</div>
+					<div class="kucun">库存</div>
+					<div class="price">沱沱价</div>
+					<div class="amount">数量</div>
+					<div class="weight">重量</div>
+					<div class="sub">金额</div>
+					<div class="oper">操作</div>
+				</div>
+				<div class="cart_body">
+					
+				</div>
+				<div class="box">
+					<div class="cleanall">
+					清空当前分站商品
+					</div>
+					<div class="shoppingagin">
+						若你没挑选完商品，请
+						<input type="button" id="shopping"  />
+					</div>
+					<div class="total">
+						商品总额：<span class="money">0.00</span> 元
+					</div>
+				</div>
+				
+		
+			<!-- 定义显示购物车的模板 -->
+				<script type="text/html" id="cart_template">
+					{{each products as product}}
+					<div class="product">
+						<div class="ck"><input type="checkbox" class="ck_product"></div>
+						<div class="id" style="display: none;">{{product.id}}</div>	
+						<div class="img_title"><img src="{{product.img}}" /><a>{{product.title}}</a></div>
+						<div class="guige">/kg</div>
+						<div class="kucun">有货</div>
+						<div class="price">{{product.price}}</div>
+						<div class="amount"><input type="text" class="amount_num" value="{{product.amount}}" style="width:40px; text-align: center;"><span class="minus">-</span><span class="add">+</span></div>
+						<div class="weight">11</div>
+						<div class="sub">{{product.price.substring(1) * product.amount}}</div>
+						<div class="oper"><a href="javascript:void(0)" class="del">删除</a></div>
+					</div>
+					{{/each}}
+				</script>
+				
+			</div>
+			
+		</div>
+		<div class="footer"></div>
+	</body>
+</html>

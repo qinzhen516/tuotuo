@@ -5,10 +5,14 @@ require.config({
 		"cookie" : "lib/jquery.cookie",
 		"zoom" : "lib/jquery.elevateZoom",
 		"template" : "lib/template",
-		"load" : "js/loadHeaderFooter"
+		"load" : "js/loadHeaderFooter",
+		"fly" : "lib/jquery.fly.min"
 	},
 	shim : {
 		"zoom" : {
+			deps : ["jquery"]
+		},
+		"fly" : {
 			deps : ["jquery"]
 		}
 	}

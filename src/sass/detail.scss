@@ -1,0 +1,229 @@
+.main{
+    width: 100%;
+    background: #FFFFFF;
+    overflow: hidden;
+    .box{
+        width: 1180px;
+        margin: 0 auto;
+        
+        .title{
+            width: 1180px;
+            height: 40px;
+            line-height: 40px;
+            color: #666666;
+            font-size: 14px;
+            font-family: "微软雅黑";
+         }
+        .left{
+            width: 200px;
+            float: left;
+            //background: yellow;
+           // clear: both;
+           overflow: hidden;
+            //height: 200px;
+            .top_d{
+                //float: left;
+                width: 198px;
+                height: 166px;
+                border-top:1px solid #d2d2d2 ;
+                border-left:1px solid #d2d2d2 ;
+                border-right:1px solid #d2d2d2 ;
+                li{
+                    height: 32px;
+                    line-height: 32px;
+                    border-bottom: 1px solid #d2d2d2;
+                    a{
+                        color: #666666;
+                        margin-left: 10px;
+                        font-weight: bolder;
+                        &:hover{
+                            color: #9F1431;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .bottom{
+                border: 1px solid #d2d2d2;
+                width: 198px;
+                margin-top: 15px;
+                .host_t{
+                    height: 32px;
+                    line-height: 32px;
+                    border-bottom:2px solid #d2d2d2 ;
+                    padding-left: 10px;
+                    font-size: 14px;
+                    color: #333333;
+                }
+                .hot{
+                    margin-top:25px ;
+                    width: 165px;
+                    margin: 0 auto;
+                    img{
+                        width: 165px;
+                        height: 165px;
+                        //vertical-align: middle;
+                        display: block;
+                        
+                    }
+                    .title_host{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        height: 14px;
+                        line-height: 14px;
+                        margin-top: 8px;
+                        white-space: nowrap;
+                        a{
+                            color: #666;
+                            font-size: 12px;
+                        }
+                    }
+                    .price_host{
+                        color: #f00f00;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+        .right{
+            width: 960px;
+            float: right;
+           // background: green;
+            //height: 200px;
+            .righttop{
+                width: 100%;
+                border-top: 2px solid #d2d2d2;
+                li{
+                    width: 100%;
+                    border-bottom: 1px dotted #D1D1D1;
+                    padding: 8px;
+                    height: 23px;
+                    line-height: 23px;
+                    color: #999999;
+                    font-size: 12px;
+                    span{
+                        font-weight: bold;
+                    }
+                }
+               
+            }
+             .paixu{
+                   width: 958px;
+                   background: #fafafa;
+                   border: 1px solid #d2d2d2;
+                   margin-top: 10px;
+                   li{
+                        padding: 8px;
+                        height: 23px;
+                        line-height: 23px;
+                        color: #999999;
+                        font-size: 12px;
+                        span{
+                            font-weight: bold;
+                        }
+                    }
+                    li:nth-child(1){
+                         border-bottom: 1px dotted #D1D1D1;
+                    }
+            }
+            #rightbottom{
+                width: 100%;
+                .zhanshi{
+                        width: 208px;
+                        float: left;
+                        margin: 20px 10px 0 0;
+                        border: 1px solid #e8e8e8;
+                        padding: 10px;
+                        font-size: 12px;
+                        &:hover{
+                             border: 1px solid #9F1431;
+                        }
+                        img{
+                            width: 210px;
+                            height: 210px;
+                        }
+                        .title_host{
+                            width: 100%;
+                            height: 42px;
+                            line-height: 21px;
+                            overflow: hidden;
+                            margin-top: 8px;
+                            text-align: center;
+                            a{
+                                color: #666666;
+                                &:hover{
+                                    color: #9F1431;
+                                    text-decoration: underline;
+                                    
+                                }
+                            }
+                        }
+                        .price_host{
+                                color: #F00F00;
+                                width: 100%;
+                                font-family: "微软雅黑";
+                                font-size: 17px;
+                                height: 26px;
+                                line-height: 26px;
+                                font-weight: bolder;
+                        }
+                        .pinglun{
+                            color: #999;
+                            width: 100%;
+                            margin: 10px 0 0 0;
+                            span{
+                                float: right;
+                                color: #333333;
+                                &:hover{
+                                     color: #9F1431;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                        .number{
+                             width: 100%;
+                            margin: 10px 0 0 0;
+                            .a_m{
+                                color: #999;
+                                width: 40%;
+                                float: left;
+                                font-size: 12px;
+                                position: relative;
+                                input{
+                                    border: none;
+                                    outline: none;
+                                    width: 50px;
+                                    height: 22px;
+                                    border: 1px solid #dadada;
+                                    padding: 0 0 0 2px;
+                                }
+//                              span{
+//                                  width: 15px;
+//                                  height: 11px;
+//                                  position: absolute;
+//                                  top: 0px;
+//                                  left: 35px;
+//                              }
+                                
+                            }
+                            .add_cart{
+                                    width: 94px;
+                                    height: 24px;
+                                    line-height: 24px;
+                                    text-align: center;
+                                    border: 1px solid #ccc;
+                                    float: right;
+                                    cursor: pointer;
+                                    &:hover{
+                                        background: #F00F00;
+                                        color: #FFFFFF;
+                                    }
+                            }
+                        }
+                }
+            }
+        }
+        
+    }
+    
+}

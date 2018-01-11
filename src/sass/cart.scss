@@ -1,0 +1,190 @@
+.main{
+    width: 100%;
+    margin: 0 auto;
+    //background: #CCCCCC;
+   
+    .warp{
+        width: 908px;
+        margin: 0 auto;
+        padding: 0 44px;
+        background: #FFFFFF;
+         overflow: hidden;
+        .instru{
+            border: 1px solid #6dba43;
+            //width: 100%;
+            padding: 7px 45px;
+            margin: 10px 0;
+            background: rgb(234,250,225);
+            //opacity: 0.3;
+            font-size: 12px;
+            
+        }
+        .city{
+            width: 866px;
+            background: #f9f9f9;
+            margin: 0px auto;
+            padding: 10px 20px;
+            height: 24px;
+            border-top: 3px solid #ccc;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            position: relative;
+            z-index: 10000;
+            font-size: 13px;
+            font-weight: bold;
+            position: relative;
+            .choosecity{
+                //float: left;
+                //padding: 2px 30px 2px 10px;
+                width: 100px;
+                height: 23px;
+                line-height: 23px;
+                //height: 18px;
+                font-weight:normal ;
+                border: 1px solid #ccc;
+                position: absolute;
+                text-align: center;
+                top:6px;
+                left: 92px;
+            }
+        }
+        .cart_title {
+            border: 1px solid #cfcfcf;
+            width: 906px;
+            height: 53px;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 53px;
+            background: rgb(225,244,199);
+            line-height: 53px;
+            //padding: 8px;
+            div{
+                padding: 8px;
+                float: left;
+                height: 36px;  
+                border-right: 1px solid #cfcfcf;
+            }
+        }
+        .product{
+            border: 1px solid #cfcfcf;
+            width: 906px;
+            height: 91px;
+            font-size: 12px;
+            //font-weight: bold;
+            line-height: 91px;
+            div{
+                padding: 8px;
+                float: left;
+                height: 74px;  
+                border-right: 1px solid #cfcfcf;
+            }
+        }
+        .ck{
+            width: 20px;
+            
+        }
+        .img_title{
+            width: 244px;
+            img{
+                width: 50px;
+                height: 50px;
+                border: 1px solid #ccc;
+                float: left;
+                //vertical-align: middle;
+            }
+            a{
+                float: left;
+                width: 150px;
+                margin-left: 10px;
+                display: inline-block;
+                height: 80px;
+                //white-space: normal;
+                line-height: 13px;
+                &:hover{
+                    color: #9F1431;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .guige{
+            width: 50px;
+        }
+        .kucun{
+            width: 48px;
+        }
+        .price{
+            width: 130px;
+        }
+        .amount{
+            width: 90px;
+            position: relative;
+            span{
+                width: 18px;
+                height: 16px;
+                border: 1px solid #CFCFCF;
+                display: block;
+                position: absolute;
+                background: rgb(238,238,238);
+                font-size:12px ;
+                text-align: center;
+                line-height: 16px;
+            }
+            .minus{
+                right:33px ;
+                top: 50px;
+            }
+            .add{
+                right: 33px;
+                top: 34px;
+            }
+        }
+        .weight{
+            width: 65px;
+        }
+        .sub{
+            width: 70px;
+        }
+        .oper{
+            width: 36px;
+        }
+        
+        
+        
+        .cleanall{
+            width: 145px;
+            height: 23px;
+            color: #01b0f1 ;
+            font-size: 14px;
+            padding: 15px;
+            float: left;
+            background: url(/img/index/cart_delete.gif) no-repeat left 14px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .shoppingagin{
+            width: 247px;
+            height: 23px;
+            padding: 15px 0;
+            font-size: 14px;
+            float: left;
+            #shopping{
+                float: right;
+                border: none;
+                width: 105px;
+                height: 21px;
+                background: url(/img/index/cart_button1.jpg);
+            }
+        }
+        .total{
+            float: right;
+            width: 138px;
+            height: 23px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #535253;
+            padding: 15px 0;
+        }
+    }
+    
+    
+}

@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.top{
+    width: 100%;
+    height: 32px;
+    margin: 0 auto;
+    line-height: 32px;
+    color: #999;
+    font-size: 12px;
+    z-index: 99;
+    background: #FFFFFF;
+    //position: sticky;
+    //top: 33px;
+    //position: relative;
+    //top: 0;
+    .warp{
+        width: 1180px;
+        margin: 0 auto;
+        
+    }
+}
+//弹出盒
+.down_m{
+        display: none;
+        //background: red;
+        position: absolute;
+        width: 244px;
+        height: 95px;
+        background: #F7F7F7;
+        top: 31px;
+        right: 128px;
+        border-top: 1px solid #F7F7F7;
+        border: 1px solid #eee;
+        z-index: 99;
+        padding-top: 15px;
+        //overflow: hidden;
+        .left{
+            float: left;
+            width: 133px;
+        }
+        .right{
+            float: left;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #cdcdcd;
+            //margin-top: 7px;
+        }
+}
+.mytuotuo{
+    display: none;
+    position: absolute;
+    top: 31px;
+    right: 187px;
+    width: 80px;
+    background: #F7F7F7;
+   // background: red;
+    padding: 0 4px;
+    z-index: 99;
+    text-align: center;
+    a{
+        color: #999;
+        height: 24px;
+        line-height: 24px;
+        width: 72px;
+        padding-right:9px ;
+        font-size:12px ;
+        
+    }
+    li{
+        &:hover{
+            background:#CDCDCD;
+        }
+        &:hover a{
+            color: #9F1431;
+        }
+    }
+}
+
+
+
+
+.top_left{
+    
+    width: 216px;
+    height: 32px;
+    float: left;
+}
+.top_left li{
+    float: left;
+//  padding: 0 10px;
+}
+.top_left li a{
+    padding:0 10px ;
+    color: #999999;
+}
+.top_right{
+    width: 412px;
+    height: 32px;
+    line-height: 32px;
+    float: right;
+    font-size: 12px;
+    position: relative;
+    
+}
+.top_right a{
+    color: #999;
+    padding: 0 19px;
+}
+.top_right .top_moblie{
+    background: url(/img/index/icon_new1.png) no-repeat;
+    width: 12px;
+    height: 16px;
+    display: block;
+    float: left;
+    position: absolute;
+    top: 8.5px;
+    left: 92px;
+}
+
+
+
+.top .songhuo{
+    float: left;
+}
+
+//送货地址
+.top .address{
+    border: 1px solid #e6e6e6;
+    float: left;
+    background: #FFFFFF;
+    padding:0 10px;
+    padding-right: 15px;
+    height: 25px;
+    line-height: 25px;
+    margin-top:2px ;
+    
+    font-weight: bolder;
+    #now_address{
+        color: #999999;
+        padding-right: 5px;
+        &:hover{
+            color: #9F1431;
+        }
+    }
+}
+
+
+//logo
+.logoAndSearch{
+    width: 1180px;
+    height: 99px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+h1{
+    width: 150px;
+    height: 60px;
+    margin-top: 15px;
+    float: left;
+   
+}
+h1 #logo{
+    display: inline-block;
+    width: 150px; 
+    height: 60px;
+    background: url(/img/index/tlogo_01.png);
+}
+h1 #logo span{
+    display: none;
+}
+
+//seach
+.search{
+    width: 451px;
+    height: 73px;
+    float: left;
+    margin-top: 25px;
+    margin-left: 273px;
+
+}
+.search .s_box{
+    height: 39px;
+    border: 2px solid #939494;    
+    padding-left: 5px;
+}
+.search .s_box #search{
+    border: none;
+    width: 373px;
+    height:39px;
+    float: left;
+    outline: none;//区输入框焦点边框
+}
+.search .s_box #btn{
+    border:  none;
+    width: 69px;
+    height: 39px;
+    background: #939494;
+    color: #fff;
+    font-size:15px ;
+}
+.search .hotSearch{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #808080;
+}
+.logoAndSearch .youji{
+    width: 182px;
+    height: 60px;
+    background: url(/img/index/youji.png);
+    float: right;
+    margin-top: 23px;
+}
+.nav{
+    width: 1180px;
+    height: 40px;
+    margin: 0 auto;
+    border-bottom: 2px solid #9f1431;
+}
+.nav .n_box{
+    width: 872px;
+    height: 41px;
+    line-height: 41px;
+}
+.nav .n_box li{
+    float: left;
+    font-size: 15px;
+    color: #9f1431;
+    padding: 0 34px;
+}
+.nav .n_box li a{
+    color: #9f1431;
+}
+.nav .n_box li:nth-child(3){
+    background: url(/img/index/64576a25345d1cbe.png) no-repeat 79px 0;
+}
+
+//广告图
+#guanggao{
+    display: none;
+   height: 70px;
+   //height: 0;
+   width: 1180px;
+   position: relative;
+   margin: 0 auto;
+   #close_g{
+       position: absolute;
+       right: 10px;
+       top: 10px;
+   }
+}

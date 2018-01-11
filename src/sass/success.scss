@@ -1,0 +1,38 @@
+.main{
+    width: 100%;
+    min-width: 1180px;
+    height: auto;
+    .box{
+        width: 997px;
+        height: 345px;
+        margin: 0 auto;
+       // background: yellow;
+        .left{
+            width: 353px;
+            height: 345px;
+            float: left;
+        }
+        .right{
+            float: left;
+            width: 586px;
+            height: 345px;
+            margin-left: 58px;
+           //background: gray;
+           .success{
+               font-size: 30px;
+               font-family: "微软雅黑";
+               color: #9f1431;
+               margin-top: 62px;
+           }
+           .agin{
+               margin-top:35px ;
+               font-size: 12px;
+               color: #777;
+               a{
+                  color: #777; 
+                  padding: 0 10px;
+               }
+           }
+        }
+    }
+}
